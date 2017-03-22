@@ -27,7 +27,7 @@ void MeanShift::set_kernel( double (*_kernel_func)(double,double) ) {
         kernel_func = _kernel_func;    
     }
 }
-
+//
 vector<double> MeanShift::shift_point(const vector<double> &point, const vector<vector<double> > &points, double kernel_bandwidth) {
     vector<double> shifted_point = point;
     for(int dim = 0; dim<shifted_point.size(); dim++){
